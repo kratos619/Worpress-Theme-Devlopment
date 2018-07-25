@@ -9,5 +9,15 @@ function wtb_theme_styles(){
 }
 
 add_action( 'wp_enqueue_scripts','wtb_theme_styles' );
+// connect to java script file
+function wtb_theme_js(){
+    
+    wp_enqueue_script( 'mordernizer_js', get_template_directory_uri() . '/js/modernizr.js','','',false );
+    wp_enqueue_script( 'foundationjs', get_template_directory_uri() . '/js/foundation.js',array('jquery'),'',true );
+    wp_enqueue_script( 'appjs', get_template_directory_uri() . '/js/app.js',array('jquery','foundationjs'),'',true );
+    
+}
+
+add_action( 'wp_enqueue_script','wtb_theme_js')
 
 ?>
