@@ -2,6 +2,19 @@
 
 add_theme_support( 'menus' );
 
+// register menus
+function register_theme_menus(){
+    register_nav_menus(
+        array(
+            'primary-menu' => __('Primary Menu')
+        )
+            
+        
+    );
+}
+// call menu
+add_action( 'init', 'register_theme_menus' );
+
 // connnect to css file 
 function wtb_theme_styles(){
     wp_enqueue_style('founddation_css', get_template_directory_uri().'/css/foundation.css');
