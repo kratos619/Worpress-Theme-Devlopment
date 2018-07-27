@@ -1,4 +1,7 @@
 <?php
+
+add_theme_support( 'menus' );
+
 // connnect to css file 
 function wtb_theme_styles(){
     wp_enqueue_style('founddation_css', get_template_directory_uri().'/css/foundation.css');
