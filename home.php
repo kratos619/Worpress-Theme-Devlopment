@@ -29,10 +29,10 @@
                                 </a>
                             </li>
                             <li class="cat">in-
-                                <?php the_category();?>
+                                <?php the_category(' ,');?>
                             </li>
                             <li class="date">in-
-                                <?php the_date();?>
+                                <?php the_time('F j ,Y');?>
                             </li>
 
                         </ul>
@@ -42,7 +42,7 @@
                         </div>
                         <?php endif ?>
                         <artical>
-
+<hr>
                             <?php endwhile; else: ?>
                             <p>
                                 <?php _e( 'No Post Found:( ' ); ?>
