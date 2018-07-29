@@ -1,9 +1,12 @@
 <div class="footer-clear"></div>
 <footer class="row no-max pad">
-        
-  <p><?php echo date('Y'); ?></p>
- 
+
+  <p>
+    <?php echo date('Y'); ?>
+  </p>
+
 </footer>
-<?php wp_footer(); ?>    
-  </body>
+<?php wp_footer(); ?>
+</body>
+
 </html>

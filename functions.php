@@ -37,4 +37,4 @@ function wtb_theme_js(){
 
 add_action( 'wp_enqueue_scripts','wtb_theme_js')
 
-?> 
+?>
