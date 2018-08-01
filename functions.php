@@ -3,6 +3,13 @@
 add_theme_support( 'menus' );
 add_theme_support( 'post-thumbnails' );
 
+// excerpt lnght
+function wpt_excerpt_length($length){
+    return 16;
+}
+
+add_filter( 'excerpt_length','wpt_excerpt_length',999 );
+
 // register menus
 function register_theme_menus(){
     register_nav_menus(
