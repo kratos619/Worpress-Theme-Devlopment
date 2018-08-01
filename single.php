@@ -13,11 +13,7 @@
                                 <?php the_title() ?>
                             </a>
                         </h1>
-                        <h4>
-                            
-                                <?php echo strip_tags(the_excerpt()); ?>
-                            
-                        </h4>
+                        
                         <ul class="post-meta no-bullet">
                             <li class="author">
                                
@@ -41,6 +37,8 @@
                             <?php the_post_thumbnail( 'large' ); ?>
                         </div>
                         <?php endif ?>
+                        <?php the_content(); ?>
+                        <?php comments_template(); ?>
                         <artical>
 <hr>
                             <?php endwhile; else: ?>
