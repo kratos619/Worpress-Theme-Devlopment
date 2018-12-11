@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url') ?>">
     <title><?php bloginfo('name') ?></title>
-    <?php wp_head() ?>
+    <?php wp_head(); ?>
 </head>
 <body>
 <header>
@@ -17,7 +17,7 @@
 </header>
 <nav class="main-nav">
 <div class="container">
-    <?php 
+    <?php
     $args = array(
         'theme_location' => 'primary'
     )
