@@ -18,6 +18,9 @@
                         
                 </article>
                 <?php endwhile; ?>
+        <?php
+            comments_template();
+        ?>
             <?php else : ?>
                 <?php echo wpautop('sorry no post found') ?>
             <?php endif; ?>
@@ -29,5 +32,6 @@
          <?php endif; ?>
             </div>
         <div class="clr"></div>
+
     </div>
     <?php get_footer(); ?>
