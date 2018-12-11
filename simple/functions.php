@@ -18,3 +18,18 @@ function set_excert_function()
 }
 
 add_filter('excerpt_length', 'set_excert_function');
+
+function init_widgets($id)
+{
+    $args = array(
+        'name' => 'Sidebar' ,
+        'id' => 'sidebar',
+        'before_widget' => '<div class="side-widget"></div>',
+        'after_widget' => '</div>',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>'
+    );
+    register_sidebar($args);
+}
+
+add_action('widgets_init', 'init_widgets');

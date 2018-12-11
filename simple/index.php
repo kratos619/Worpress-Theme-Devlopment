@@ -11,7 +11,7 @@
                         </h3>
                         <div class="meta">
                             Created By: <?php the_author(); ?> On <?php the_date(); ?>
-                        </div>
+                        </div> 
                         <?php if (has_post_thumbnail()): ?>
                             <div class="post-thumbnail">
                                 <?php the_post_thumbnail(); ?>
@@ -26,10 +26,10 @@
             <?php endif; ?>
         </div>
         <div class="sidebar">
-         test   
+         <?php if (is_active_sidebar('sidebar')): ?>
+            <?php dynamic_sidebar('sidebar') ?>
+         <?php endif; ?>
             </div>
+        <div class="clr"></div>
         </div>
-<div class="clr">
-
-</div>
     <?php get_footer(); ?>
