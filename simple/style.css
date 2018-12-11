@@ -34,6 +34,29 @@ header h1 {
 
 }
 
+.main-nav {
+    background: black;
+    color: white;
+    padding: 10px;
+}
+
+.main-nav li {
+    list-style: none;
+    float: left;
+    padding-right: 15px;
+
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.main-nav ul {
+    margin: 0;
+    padding: 0;
+}
+
 .post-thumbnail {
     height: 100%;
     width: 100%;
