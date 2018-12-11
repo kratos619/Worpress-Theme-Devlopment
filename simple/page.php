@@ -22,5 +22,12 @@
                 <?php echo wpautop('sorry no post found') ?>
             <?php endif; ?>
         </div>
+
+                <div class="sidebar">
+         <?php if (is_active_sidebar('sidebar')): ?>
+            <?php dynamic_sidebar('sidebar') ?>
+         <?php endif; ?>
+            </div>
+        <div class="clr"></div>
 </div>
     <?php get_footer(); ?>

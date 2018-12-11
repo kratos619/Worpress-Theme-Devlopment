@@ -31,5 +31,5 @@
          <?php endif; ?>
             </div>
         <div class="clr"></div>
-        </div>
+</div>
     <?php get_footer(); ?>
