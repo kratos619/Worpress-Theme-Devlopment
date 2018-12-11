@@ -74,8 +74,19 @@ article.post a.button {
     margin-bottom: 10px
 }
 
+.clr {
+    clear: both;
+}
+
+.sidebar {
+    float: right;
+    width: 28%;
+}
+
 .main {
     margin: 15px 0;
+    float: left;
+    width: 68%;
 }
 
 footer {
