@@ -5,16 +5,16 @@
 		<?php if (have_posts()): ?>
 		<?php while (have_posts()): the_post()?>
 								<article class="page">
-					<?php if(page_is_parent() || $post->post_parent > 0) : ?>
+					<?php if (page_is_parent() || $post->post_parent > 0) : ?>
 						<nav class="nav sub-nav">
 							<ul>
 								<span class="parent-link"><a href="<?php echo get_the_permalink(get_top_parent()); ?>"><?php echo get_the_title(get_top_parent()); ?></a></span>
 								<?php
-									$args = array(
-										'child_of' => get_top_parent(),
-										'title_li' => ''
-									);
-								?>
+                                    $args = array(
+                                        'child_of' => get_top_parent(),
+                                        'title_li' => ''
+                                    );
+                                ?>
 								<?php wp_list_pages($args); ?>
 							</ul>
 						</nav>
@@ -29,12 +29,13 @@
 		   <?php echo wpautop('sorry no post found') ?>
 		<?php endif; ?>
 		</div>
-
 		<div class="side">
 			<div class="block">
-			<h3>Sidebar Head</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis faucibus lacus sit amet orci eleifend suscipit. Quisque sit amet congue elit, sit amet dictum nisl</p>
-			<a class="button">More</a>
+			<?php if (is_active_sidebar('sidebar')) : ?>
+			<?php dynamic_sidebar('sidebar'); ?>
+			<?php else: ?>
+			<p>No Recient Activitys</p>
+			<?php endif; ?>
 			</div>
 		</div>
 	</div>
