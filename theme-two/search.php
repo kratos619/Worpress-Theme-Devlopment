@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-
 	<div class="container content">
         <h1>Search Results</h1>
 		<div class="main block">
