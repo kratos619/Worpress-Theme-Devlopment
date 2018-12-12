@@ -31,6 +31,8 @@
 				<?php endif; ?>
 				<?php the_content(); ?>
 			</article>
+			<?php comments_template('count'); ?>
+			
 		<?php endwhile; ?>
 		<?php else: ?>
 		   <?php echo wpautop('sorry no Search found') ?>
