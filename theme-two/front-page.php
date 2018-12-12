@@ -1,7 +1,10 @@
 <?php get_header(); ?>
 
-	<div class="container content">
-		<div class="main block">
+<div class="container content">
+			<?php if (is_active_sidebar('showcase')) : ?>
+			<?php dynamic_sidebar('showcase'); ?>
+			<?php endif; ?>
+		<div class=" block">
 		<?php if (have_posts()): ?>
 		<?php while (have_posts()): the_post()?>
 								<article class="page">
@@ -29,14 +32,14 @@
 		   <?php echo wpautop('sorry no post found') ?>
 		<?php endif; ?>
 		</div>
-		<div class="side">
-			<div >
-			<?php if (is_active_sidebar('sidebar')) : ?>
-			<?php dynamic_sidebar('sidebar'); ?>
-			<?php else: ?>
-			<p>No Recient Activitys</p>
+			<?php if (is_active_sidebar('box1')) : ?>
+			<?php dynamic_sidebar('box1'); ?>
+			<?php endif; ?>			
+            <?php if (is_active_sidebar('box2')) : ?>
+			<?php dynamic_sidebar('box2'); ?>
+			<?php endif; ?>			
+            <?php if (is_active_sidebar('box3')) : ?>
+			<?php dynamic_sidebar('box3'); ?>
 			<?php endif; ?>
-			</div>
-		</div>
 	</div>
 <?php get_footer(); ?>

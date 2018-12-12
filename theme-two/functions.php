@@ -39,7 +39,7 @@ function init_widget($id)
     $arrayName3 = array(
         'name' => "Box1" ,
         'id' => 'box1',
-        'before_widget' => '<div class="box1" >' ,
+        'before_widget' => '<div class="box box1" >' ,
         'after_widget' => '</div>',
         'before_title' => '<h3>',
         'after_title' => '</h3>',
@@ -49,7 +49,7 @@ function init_widget($id)
     $arrayName4 = array(
         'name' => "Box2" ,
         'id' => 'box2',
-        'before_widget' => '<div class="box2" >' ,
+        'before_widget' => '<div class="box box2" >' ,
         'after_widget' => '</div>',
         'before_title' => '<h3>',
         'after_title' => '</h3>',
@@ -59,7 +59,7 @@ function init_widget($id)
     $arrayName5 = array(
         'name' => "Box3" ,
         'id' => 'box3',
-        'before_widget' => '<div class="box3" >' ,
+        'before_widget' => '<div class="box box3" >' ,
         'after_widget' => '</div>',
         'before_title' => '<h3>',
         'after_title' => '</h3>',

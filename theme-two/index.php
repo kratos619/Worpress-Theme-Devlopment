@@ -12,13 +12,11 @@
 		</div>
 
 		<div class="side">
-			<div >
+			
 			<?php if (is_active_sidebar('sidebar')) : ?>
 			<?php dynamic_sidebar('sidebar'); ?>
-			<?php else: ?>
-			<p>No Recient Activitys</p>
 			<?php endif; ?>
-			</div>
+			
 		</div>
 	</div>
 <?php get_footer(); ?>
