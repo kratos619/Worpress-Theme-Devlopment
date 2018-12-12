@@ -5,6 +5,7 @@ Author URI: https://sitename.org/
 Description:simple wp theme v1.0
 License: GNU General Public License v2 or later
 */
+
 body {
 	font-family: Arial;
 	color: #333;
@@ -139,13 +140,33 @@ article.post .meta {
 }
 
 article.post .meta a {
-	color: white;
-	text-decoration: none;
+	color: #fff;
 }
 
 article .post-thumbnail img {
 	width: 100%;
 	height: auto;
+}
+
+article.post-aside small {
+	font-weight: bold;
+}
+
+article.post-aside .well {
+	background: #e0eefc;
+	padding: 10px;
+}
+
+article.post-link .well {
+	background: #f4f4f4;
+	padding: 10px;
+}
+
+article.post-gallery {
+	background: #333;
+	color: #fff;
+	padding: 5px 10px;
+	margin-top: 5px;
 }
 
 
@@ -188,4 +209,56 @@ footer.main-footer li {
 
 footer.main-footer a {
 	color: #fff;
+}
+
+
+.archive-post {
+	border-bottom: #ccc 1px solid;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+
+.archive-post h4,
+.archive-post p {
+	margin: 0;
+	padding: 0;
+}
+
+.phone {
+	background: #f4f4f4;
+	border: 1px solid #ccc;
+	padding: 8px;
+	font-weight: bold;
+}
+
+.sub-nav {
+	margin-top: 10px;
+	float: right;
+	width: 300px;
+}
+
+.sub-nav ul {
+	float: right;
+}
+
+.sub-nav .parent-link {
+	font-weight: bold;
+	color: #000;
+	float: left;
+	margin-right: 20px;
+	padding-right: 20px;
+	border-right: 1px solid #009acd;
+}
+
+.sub-nav .parent-link a {
+	font-weight: bold;
+	color: #000;
+}
+
+.sub-nav .current_page_item {
+	font-weight: bold;
+}
+
+.clr {
+	clear: both;
 }
