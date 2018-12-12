@@ -262,3 +262,13 @@ footer.main-footer a {
 .clr {
 	clear: both;
 }
+
+.side-widget {
+	margin-bottom: 20px;
+}
+
+.side-widget li {
+	list-style: none;
+	line-height: 2.1em;
+	border-bottom: 1px dotted #ccc;
+}
