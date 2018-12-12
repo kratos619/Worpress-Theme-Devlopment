@@ -60,9 +60,13 @@
 					 ?>
 
 				 </p>
-				<p>
+				<?php if(has_post_thumbnail()) : ?>
+				<div class="post-thumbnail">
+					<?php the_post_thumbnail() ?>
+				</div>	
+				<?php endif; ?>
 				<?php the_excerpt(); ?>
-				</p>
+				
 				<a class="button" href="<?php the_permalink(); ?>">Read More</a>
 			</article>
 		<?php endwhile; ?>

@@ -138,6 +138,17 @@ article.post .meta {
 	padding: 7px;
 }
 
+article.post .meta a {
+	color: white;
+	text-decoration: none;
+}
+
+article .post-thumbnail img {
+	width: 100%;
+	height: auto;
+}
+
+
 .button {
 	background: #009acd;
 	color: #fff;
