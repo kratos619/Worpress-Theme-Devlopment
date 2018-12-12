@@ -63,6 +63,7 @@ header h1 {
 
 }
 
+
 article.post {
     border-bottom: 1px black solid;
     overflow: hidden;
@@ -88,6 +89,7 @@ article.post a.button {
     float: left;
     width: 68%;
 }
+
 
 footer {
     background: #393939;
